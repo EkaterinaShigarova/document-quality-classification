@@ -1,0 +1,197 @@
+{
+  "experiment": "week7_yolov8s_cls",
+  "week": 7,
+  "task": 3,
+  "model": "yolov8s-cls",
+  "regime": "full_finetuning",
+  "input_size": [
+    640,
+    640
+  ],
+  "seed": 24500007,
+  "device": "CPU",
+  "epochs_planned": 50,
+  "epochs_run": 10,
+  "train_time_s": 5929.205037599895,
+  "latency_ms_per_image": 89.40898599801585,
+  "model_size_mb": 10.255634,
+  "params": 5083298,
+  "test_samples": 276,
+  "metrics": {
+    "accuracy": 0.9963768115942029,
+    "precision_macro": 0.9964028776978417,
+    "recall_macro": 0.9963768115942029,
+    "f1_macro": 0.9963767640301936,
+    "per_class": {
+      "bad": {
+        "precision": 1.0,
+        "recall": 0.9927536231884058,
+        "f1-score": 0.9963636363636363,
+        "support": 138.0
+      },
+      "good": {
+        "precision": 0.9928057553956835,
+        "recall": 1.0,
+        "f1-score": 0.9963898916967509,
+        "support": 138.0
+      }
+    }
+  },
+  "confusion_matrix": [
+    [
+      137,
+      1
+    ],
+    [
+      0,
+      138
+    ]
+  ],
+  "history": {
+    "epoch": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      5.0,
+      6.0,
+      7.0,
+      8.0,
+      9.0,
+      10.0
+    ],
+    "time": [
+      685.053,
+      1259.39,
+      1806.67,
+      2349.12,
+      2891.86,
+      3435.07,
+      3977.28,
+      4614.24,
+      5345.53,
+      5904.78
+    ],
+    "train/loss": [
+      0.36395,
+      0.07879,
+      0.0418,
+      0.03568,
+      0.03603,
+      0.03515,
+      0.03291,
+      0.01594,
+      0.01088,
+      0.0116
+    ],
+    "metrics/accuracy_top1": [
+      0.95833,
+      0.93981,
+      0.99074,
+      0.98611,
+      0.99537,
+      0.99074,
+      0.99537,
+      0.99537,
+      0.99537,
+      0.99537
+    ],
+    "metrics/accuracy_top5": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "val/loss": [
+      0.11152,
+      0.26508,
+      0.03865,
+      0.03921,
+      0.0272,
+      0.01927,
+      0.05268,
+      0.01509,
+      0.0182,
+      0.01826
+    ],
+    "lr/pg0": [
+      0.000325203,
+      0.000645498,
+      0.000952592,
+      0.0009406,
+      0.0009208,
+      0.000901,
+      0.0008812,
+      0.0008614,
+      0.0008416,
+      0.0008218
+    ],
+    "lr/pg1": [
+      0.000325203,
+      0.000645498,
+      0.000952592,
+      0.0009406,
+      0.0009208,
+      0.000901,
+      0.0008812,
+      0.0008614,
+      0.0008416,
+      0.0008218
+    ],
+    "lr/pg2": [
+      0.0678049,
+      0.0347918,
+      0.0017656,
+      0.0009406,
+      0.0009208,
+      0.000901,
+      0.0008812,
+      0.0008614,
+      0.0008416,
+      0.0008218
+    ]
+  },
+  "status": "completed",
+  "metadata_sha256": "db7b8e2ffd31d4991e3d6ca57b061ce517b837a98c91312b352a40e5491048de",
+  "class_indices": {
+    "bad": 0,
+    "good": 1
+  },
+  "command": "C:\\Users\\shiga_2r72hbp\\Downloads\\project managment\\.venv_quality\\Scripts\\python.exe C:\\Users\\shiga_2r72hbp\\Downloads\\project managment\\lab4\\train_yolo_quality.py --model yolov8s-cls",
+  "hyperparameters": {
+    "batch_size": 32,
+    "learning_rate": 0.001,
+    "optimizer": "Adam",
+    "patience": 5,
+    "preprocessing": "RGB; full-image bilinear resize to 640x640; pixels in [0,1]",
+    "additional_augmentation": "none; existing dataset variants retained",
+    "checkpoint_selection": "validation top1 accuracy (Ultralytics fitness)"
+  },
+  "latency_protocol": {
+    "warmup": 20,
+    "timed_predictions": 100,
+    "batch_size": 1,
+    "includes": "resize, preprocessing, inference, decision",
+    "excludes": "image decoding, disk IO, model loading, network"
+  },
+  "environment": {
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "ultralytics": "8.4.201",
+    "pytorch": "2.15.0+cpu",
+    "torchvision": "0.29.2+cpu",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+    "cpu_threads": 4,
+    "inter_op_threads": 1,
+    "precision": "float32"
+  },
+  "model_file": "best.pt",
+  "size_note": "File size of Ultralytics best.pt; evaluated after loading as float32.",
+  "misclassified_samples": 1
+}
