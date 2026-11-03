@@ -1,7 +1,7 @@
 # Model Selection Memo
 
 **Student:** Ekaterina Shigarova  
-**Group:** IIKb-24  
+**Group:** AIb-24  
 **Task:** 1 — Quality Classification Model  
 **Date:** 2 November 2026  
 **Seed:** 24500007
