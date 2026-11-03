@@ -16,9 +16,9 @@ Speed matters because the user is waiting for feedback. Correct rejection also m
 
 ## 2. Dataset and project constraints
 
-My dataset contains 600 synthetic images: 300 good and 300 bad. It includes INN, SNILS and passport images. Each document type has 100 good and 100 bad images. The five bad-image defect types are blur, glare, skew, occlusion and exposure.
+My dataset contains 1,800 synthetic images: 900 good and 900 bad. It includes INN, SNILS and passport images, with 300 good and 300 bad images for each document type. These images were created from 300 source documents (100 per type), with three good and three bad versions of each source. They are augmented versions, not 1,800 independent source documents. Each bad-image defect type (blur, glare, skew, occlusion and exposure) has 180 images. All 1,800 metadata records use seed 24500007.
 
-The planned train/validation/test ratio is 70/15/15. Before training, I will record the actual counts and check the split stored in the metadata. Good and bad versions of the same source document must stay in the same split. All models will use the same split and the same test images.
+The generator assigns each source document to train, validation or test using probabilities of 70%, 15% and 15%. The actual metadata counts are 1,308 training images (654 good and 654 bad), 216 validation images (108 good and 108 bad), and 276 test images (138 good and 138 bad). This is approximately 72.67% / 12.00% / 15.33%, rather than an exact 70/15/15 count. A metadata check found no source document appearing in more than one split and no repeated image IDs or image paths. All models will use this same recorded split and the same test images. Image file availability and loading will be checked before training.
 
 | Constraint | Effect on my model choice |
 |---|---|
