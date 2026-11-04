@@ -1,9 +1,6 @@
 # YOLOv8 Classification: Comparison with MobileNetV2
 
-**Student:** Ekaterina Shigarova  
-**Group:** AIb-24  
-**Task:** 3 — YOLOv8 Classification  
-**Seed:** 24500007
+
 
 ## 1. Experiment setup
 
