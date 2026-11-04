@@ -1,6 +1,6 @@
 # Quality Gate Decision Memo
 
-Student: Ekaterina Shigarova, IIKb-24. Task 4. Seed: 24500007.
+
 
 ## 1. Decision
 
