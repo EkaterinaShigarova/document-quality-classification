@@ -1,6 +1,6 @@
 # Full Model Comparison
 
-Student: Ekaterina Shigarova, IIKb-24. Task 4. Seed: 24500007.
+
 
 This table is generated from the four experiment results.json files. Precision, recall and F1 are macro averages. All runs use the same 276 test images and metadata hash.
 
