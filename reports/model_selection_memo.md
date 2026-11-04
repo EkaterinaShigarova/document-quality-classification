@@ -1,10 +1,6 @@
 # Model Selection Memo
 
-**Student:** Ekaterina Shigarova  
-**Group:** AIb-24  
-**Task:** 1 — Quality Classification Model  
-**Date:** 2 November 2026  
-**Seed:** 24500007
+
 
 ## 1. Purpose and pipeline context
 
