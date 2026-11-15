@@ -1,6 +1,6 @@
 # Error-Driven Glare Augmentation
 
-Student: Ekaterina Shigarova, IIKb-24. Task 5C. Seed: 24500007.
+
 
 ## Evidence and protocol
 
