@@ -2,7 +2,7 @@
 
 
 Document Quality Classification
-Ekaterina Shigarova, IIKb-24. Machine Learning Lab 6.
+
 
 This project classifies synthetic document photographs as bad or good before further document processing. It compares MobileNetV2, YOLOv8n-cls, YOLOv8s-cls and EfficientNet-B0, followed by fine-tuning, threshold selection, glare augmentation and ONNX export.
 
