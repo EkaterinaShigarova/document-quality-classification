@@ -1,6 +1,6 @@
 # Deployment Export and CPU Benchmark
 
-Student: Ekaterina Shigarova, IIKb-24. Task 5D. Seed: 24500007.
+
 
 I exported the fine-tuned EfficientNet-B0 from Task 5A to one FP32 ONNX file (opset 18, fixed input 1 x 3 x 224 x 224). The 5C augmentation did not improve the reported test decisions, so the previous prototype was retained. No model was trained. Both runtimes output P(good), with the same threshold 0.5. The separate validation-selected threshold from 5B is not applied, so this experiment isolates export/runtime effects.
 
