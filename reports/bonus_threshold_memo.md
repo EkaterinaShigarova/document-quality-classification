@@ -1,6 +1,5 @@
 # Threshold and Cost Analysis
 
-Student: Ekaterina Shigarova, IIKb-24. Task 5B. Seed: 24500007.
 
 I used the saved fine-tuned EfficientNet-B0 checkpoint from Task 5A. No training was performed. Threshold selection used only 216 validation images (108 bad, 108 good). Test images and test predictions were not read.
 
