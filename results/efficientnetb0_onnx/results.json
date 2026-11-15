@@ -1,0 +1,190 @@
+{
+  "experiment": "efficientnetb0_onnx",
+  "task": "5D",
+  "model": "EfficientNet-B0",
+  "regime": "finetune_top30",
+  "artifact_format": "ONNX FP32",
+  "parent_experiment": "efficientnetb0_finetune_top30",
+  "seed": 24500007,
+  "input_size": [
+    224,
+    224
+  ],
+  "class_indices": {
+    "bad": 0,
+    "good": 1
+  },
+  "params": 4008829,
+  "test_samples": 276,
+  "metadata_sha256": "db7b8e2ffd31d4991e3d6ca57b061ce517b837a98c91312b352a40e5491048de",
+  "split_counts": {
+    "train": 1308,
+    "test": 276,
+    "validation": 216
+  },
+  "source_results_sha256": "f672b30e741ed45cc3563b56dd8b94d26334752972b328db8dcd866b5683d138",
+  "source_checkpoint_sha256": "4e0cf19e42f570cdbdf018e90ad1d9ee06136133fa330693ae927cbfeea51746",
+  "checkpoint_epoch": 28,
+  "training_performed": false,
+  "quantization": "none",
+  "threshold": 0.5,
+  "threshold_probability": "P(good)",
+  "status": "completed",
+  "command": "C:\\Users\\shiga_2r72hbp\\Downloads\\project managment\\.venv_quality\\Scripts\\python.exe C:\\Users\\shiga_2r72hbp\\Downloads\\project managment\\lab4\\export_efficientnetb0_onnx.py",
+  "environment": {
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+    "numpy": "2.4.6",
+    "torch": "2.15.0+cpu",
+    "torchvision": "0.29.2+cpu",
+    "onnx": "1.23.2",
+    "onnxruntime": "1.32.0",
+    "onnxscript": "0.7.2",
+    "cpu_threads": 4,
+    "inter_op_threads": 1
+  },
+  "export": {
+    "opset": 18,
+    "dynamo": true,
+    "external_data": false,
+    "precision": "float32",
+    "input": "image: float32[1,3,224,224]",
+    "output": "probability_good: float32[1]",
+    "preprocessing": "RGB; full-image bilinear resize to 224x224; pixels to [0,1]; ImageNet mean/std normalization"
+  },
+  "deployment_benchmark": {
+    "test_samples": 276,
+    "threshold": 0.5,
+    "metrics_split": "test",
+    "pytorch": {
+      "size_mb": 16.309797,
+      "metrics": {
+        "accuracy": 0.9963768115942029,
+        "precision_macro": 0.9964028776978417,
+        "recall_macro": 0.9963768115942029,
+        "f1_macro": 0.9963767640301937,
+        "per_class": {
+          "bad": {
+            "precision": 1.0,
+            "recall": 0.9927536231884058,
+            "f1-score": 0.9963636363636363,
+            "support": 138
+          },
+          "good": {
+            "precision": 0.9928057553956835,
+            "recall": 1.0,
+            "f1-score": 0.996389891696751,
+            "support": 138
+          }
+        },
+        "confusion_matrix": [
+          [
+            137,
+            1
+          ],
+          [
+            0,
+            138
+          ]
+        ]
+      },
+      "latency": {
+        "mean_ms": 26.925456,
+        "median_ms": 26.904,
+        "p95_ms": 29.695484999999998,
+        "timed_predictions": 100,
+        "warmup": 20
+      }
+    },
+    "onnx": {
+      "size_mb": 16.702506,
+      "metrics": {
+        "accuracy": 0.9963768115942029,
+        "precision_macro": 0.9964028776978417,
+        "recall_macro": 0.9963768115942029,
+        "f1_macro": 0.9963767640301937,
+        "per_class": {
+          "bad": {
+            "precision": 1.0,
+            "recall": 0.9927536231884058,
+            "f1-score": 0.9963636363636363,
+            "support": 138
+          },
+          "good": {
+            "precision": 0.9928057553956835,
+            "recall": 1.0,
+            "f1-score": 0.996389891696751,
+            "support": 138
+          }
+        },
+        "confusion_matrix": [
+          [
+            137,
+            1
+          ],
+          [
+            0,
+            138
+          ]
+        ]
+      },
+      "latency": {
+        "mean_ms": 12.950858,
+        "median_ms": 12.93345,
+        "p95_ms": 14.331685,
+        "timed_predictions": 100,
+        "warmup": 20
+      },
+      "providers": [
+        "CPUExecutionProvider"
+      ]
+    },
+    "accuracy_drop": 0.0,
+    "f1_macro_drop": 0.0,
+    "decision_disagreements": 0,
+    "max_probability_abs_difference": 4.827976226806641e-06,
+    "protocol": {
+      "warmup": 20,
+      "timed_predictions": 100,
+      "batch_size": 1,
+      "engine_order": "alternating",
+      "includes": "RGB image resize, tensor conversion, normalization, inference, decision",
+      "excludes": "disk IO, image decoding, model loading, network, downstream OCR",
+      "scope": "quality classifier stage; not the full end-to-end document pipeline"
+    }
+  },
+  "metrics": {
+    "accuracy": 0.9963768115942029,
+    "precision_macro": 0.9964028776978417,
+    "recall_macro": 0.9963768115942029,
+    "f1_macro": 0.9963767640301937,
+    "per_class": {
+      "bad": {
+        "precision": 1.0,
+        "recall": 0.9927536231884058,
+        "f1-score": 0.9963636363636363,
+        "support": 138
+      },
+      "good": {
+        "precision": 0.9928057553956835,
+        "recall": 1.0,
+        "f1-score": 0.996389891696751,
+        "support": 138
+      }
+    }
+  },
+  "confusion_matrix": [
+    [
+      137,
+      1
+    ],
+    [
+      0,
+      138
+    ]
+  ],
+  "latency_ms_per_image": 12.950858,
+  "model_size_mb": 16.702506,
+  "model_file": "model.onnx"
+}
