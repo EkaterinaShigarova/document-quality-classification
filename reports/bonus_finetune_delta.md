@@ -1,6 +1,5 @@
 # Fine-Tuning Delta
 
-Student: Ekaterina Shigarova, IIKb-24. Task 5A. Seed: 24500007.
 
 Values come from the frozen and fine-tuned results.json files. Quality metrics use the same test split.
 
@@ -31,9 +30,9 @@ Values come from the frozen and fine-tuned results.json files. Quality metrics u
 
 1. Test macro F1 increased by +0.003624, and accuracy changed by +0.36 percentage points.
 2. False accepts changed from 2 to 1, and false rejects changed from 0 to 0.
-3. The train-minus-validation accuracy gap changed from +0.000170 to +0.000807; the selected checkpoint has higher train than validation accuracy, which is a warning to inspect for overfitting. Validation loss rose after the selected epoch before early stopping. The gap alone does not prove overfitting.
-4. The architecture and total parameter count stayed the same, so inference cost and float32 checkpoint size should remain similar; the measured deltas above include timing variation and minor file-metadata overhead.
-5. The original acceptance and F1-within-0.01 latency tie-break selects the fine-tuned version in this benchmark. This is a provisional CPU prototype choice: the gap, glare failures and single-run timing uncertainty still require review, and real-photo performance remains untested.
+3. At the selected checkpoints, the train-minus-validation accuracy gap was 0.017 percentage points for frozen and 0.081 percentage points for fine-tuned. Training and validation losses generally decreased together, without a large sustained divergence. Validation loss fluctuated above its epoch-28 minimum for five more epochs; early stopping ended training at epoch 33 and restored epoch 28.
+4. The architecture, total parameter count and recorded float32 checkpoint size stayed the same. Measured latency decreased by 1.75 ms/image, but a single timing run cannot establish a reliable speed advantage. Total fine-tuning time was shorter because early stopping ran 33 rather than 50 epochs; this does not imply cheaper training per epoch.
+5. Both versions pass the original acceptance limits. Under the original F1-within-0.01 latency tie-break, the recorded results select the fine-tuned version for the CPU prototype. The accuracy improvement is only one test image out of 276. The remaining error is bad_inn_glare_182_v2.jpg, incorrectly accepted as good; bad_inn_glare_242_v2.jpg is now classified correctly. Real-photo performance remains untested.
 
 ## Protocol
 
