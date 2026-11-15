@@ -1,0 +1,6 @@
+defect,bad_support,good_support,f1_bad_before,f1_bad_after,f1_delta,recall_bad_before,recall_bad_after,false_accepts_before,false_accepts_after
+blur,29,138,1.0,1.0,0.0,1.0,1.0,0,0
+exposure,29,138,1.0,1.0,0.0,1.0,1.0,0,0
+glare,28,138,0.9818181818181818,0.9818181818181818,0.0,0.9642857142857143,0.9642857142857143,1,1
+occlusion,26,138,1.0,1.0,0.0,1.0,1.0,0,0
+skew,26,138,1.0,1.0,0.0,1.0,1.0,0,0

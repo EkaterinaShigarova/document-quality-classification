@@ -1,0 +1,531 @@
+{
+  "experiment": "efficientnetb0_glare_aug",
+  "week": 8,
+  "task": "5C",
+  "model": "EfficientNet-B0",
+  "regime": "finetune_top30",
+  "input_size": [
+    224,
+    224
+  ],
+  "seed": 24500007,
+  "device": "CPU",
+  "epochs_planned": 50,
+  "epochs_run": 32,
+  "best_epoch": 27,
+  "train_time_s": 2457.984709800221,
+  "latency_ms_per_image": 24.440355016849935,
+  "model_size_mb": 16.309797,
+  "params": 4008829,
+  "test_samples": 276,
+  "metrics": {
+    "accuracy": 0.9963768115942029,
+    "precision_macro": 0.9964028776978417,
+    "recall_macro": 0.9963768115942029,
+    "f1_macro": 0.9963767640301936,
+    "per_class": {
+      "bad": {
+        "precision": 1.0,
+        "recall": 0.9927536231884058,
+        "f1-score": 0.9963636363636363,
+        "support": 138.0
+      },
+      "good": {
+        "precision": 0.9928057553956835,
+        "recall": 1.0,
+        "f1-score": 0.9963898916967509,
+        "support": 138.0
+      }
+    }
+  },
+  "confusion_matrix": [
+    [
+      137,
+      1
+    ],
+    [
+      0,
+      138
+    ]
+  ],
+  "history": {
+    "loss": [
+      0.06541173307037135,
+      0.05093228604519221,
+      0.04447763458760142,
+      0.04011255265170828,
+      0.03517582051068636,
+      0.029632659213167448,
+      0.03437664700723296,
+      0.02495270596093723,
+      0.023316649627510105,
+      0.01793828088681951,
+      0.01796690160437097,
+      0.01969584123877985,
+      0.014659500322005617,
+      0.01304629600866034,
+      0.02190540424499672,
+      0.017652352327703062,
+      0.017137811465092027,
+      0.016512011648661284,
+      0.018708001696561616,
+      0.013593010446313052,
+      0.007748689596464328,
+      0.016434456558010915,
+      0.015552659420935944,
+      0.013798607420033863,
+      0.016700424960264738,
+      0.018461995098429423,
+      0.007521139542552264,
+      0.009947721118538923,
+      0.014401531754423286,
+      0.006800525933532585,
+      0.013022762826154013,
+      0.012825805742282204
+    ],
+    "accuracy": [
+      0.9831804281345565,
+      0.981651376146789,
+      0.9870030581039755,
+      0.985474006116208,
+      0.9885321100917431,
+      0.9931192660550459,
+      0.9923547400611621,
+      0.9931192660550459,
+      0.9954128440366973,
+      0.9969418960244648,
+      0.9946483180428135,
+      0.9954128440366973,
+      0.9969418960244648,
+      0.9954128440366973,
+      0.9931192660550459,
+      0.9969418960244648,
+      0.9954128440366973,
+      0.9954128440366973,
+      0.9938837920489296,
+      0.9954128440366973,
+      0.9977064220183486,
+      0.9938837920489296,
+      0.996177370030581,
+      0.9977064220183486,
+      0.9954128440366973,
+      0.9954128440366973,
+      0.9977064220183486,
+      0.9977064220183486,
+      0.9969418960244648,
+      0.9977064220183486,
+      0.9977064220183486,
+      0.9954128440366973
+    ],
+    "val_loss": [
+      0.0652545713302162,
+      0.05672422092821863,
+      0.07684762329208078,
+      0.047245358772299906,
+      0.03595202424804921,
+      0.029580388287151302,
+      0.034336621398796084,
+      0.026638934397380108,
+      0.02655131183564663,
+      0.02583995224321606,
+      0.021207245489306473,
+      0.019407128440906054,
+      0.022050694678910077,
+      0.028641256227813387,
+      0.03969383785173435,
+      0.019796606117678393,
+      0.013052222275830529,
+      0.012734915220385624,
+      0.014642117549320337,
+      0.020729958959337737,
+      0.014806641714164504,
+      0.01141932421941655,
+      0.013426918135438528,
+      0.012371677284439405,
+      0.04146984272908109,
+      0.02095416647218237,
+      0.010767517703007561,
+      0.0139874208856512,
+      0.016054591057278838,
+      0.020531601968859496,
+      0.0205852632481967,
+      0.014699028027179237
+    ],
+    "val_accuracy": [
+      0.9675925925925926,
+      0.9675925925925926,
+      0.9675925925925926,
+      0.9907407407407407,
+      0.9861111111111112,
+      0.9907407407407407,
+      0.9861111111111112,
+      0.9953703703703703,
+      0.9907407407407407,
+      0.9907407407407407,
+      0.9907407407407407,
+      0.9907407407407407,
+      0.9907407407407407,
+      0.9861111111111112,
+      0.9814814814814815,
+      0.9907407407407407,
+      0.9953703703703703,
+      0.9953703703703703,
+      1.0,
+      0.9953703703703703,
+      1.0,
+      1.0,
+      0.9907407407407407,
+      0.9953703703703703,
+      0.9814814814814815,
+      0.9907407407407407,
+      1.0,
+      0.9953703703703703,
+      0.9907407407407407,
+      0.9907407407407407,
+      0.9953703703703703,
+      0.9907407407407407
+    ]
+  },
+  "status": "completed",
+  "metadata_sha256": "db7b8e2ffd31d4991e3d6ca57b061ce517b837a98c91312b352a40e5491048de",
+  "class_indices": {
+    "bad": 0,
+    "good": 1
+  },
+  "split_counts": {
+    "train": 1308,
+    "test": 276,
+    "validation": 216
+  },
+  "command": "C:\\Users\\shiga_2r72hbp\\Downloads\\project managment\\.venv_quality\\Scripts\\python.exe C:\\Users\\shiga_2r72hbp\\Downloads\\project managment\\lab4\\train_efficientnetb0_glare.py",
+  "hyperparameters": {
+    "batch_size": 32,
+    "learning_rate": 1e-05,
+    "patience": 5,
+    "optimizer": "Adam",
+    "loss": "BCEWithLogitsLoss",
+    "threshold": 0.5,
+    "pretrained_weights": "EfficientNet_B0_Weights.IMAGENET1K_V1",
+    "head": "Dropout(0.2), Linear(1280, 1); sigmoid at inference",
+    "preprocessing": "RGB; full-image bilinear resize to 224x224; pixels to [0,1]; ImageNet mean/std normalization",
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "checkpoint_selection": "minimum validation loss",
+    "additional_augmentation": {
+      "name": "strong_white_ellipse_glare",
+      "split": "train",
+      "eligible_quality_label": "bad",
+      "eligible_defect_type": "glare",
+      "probability": 0.5,
+      "ellipses": [
+        1,
+        2
+      ],
+      "alpha_8bit": [
+        150,
+        230
+      ],
+      "width_fraction": [
+        0.2,
+        0.5
+      ],
+      "height_fraction": [
+        0.08,
+        0.22
+      ],
+      "center_x_fraction": [
+        0.15,
+        0.85
+      ],
+      "center_y_fraction": [
+        0.2,
+        0.75
+      ],
+      "edge_blur_radius_fraction": 0.012,
+      "color_rgb": [
+        255,
+        255,
+        255
+      ],
+      "applied_before_resize": true,
+      "labels_changed": false,
+      "rng": "local Random(SHA256(seed:epoch:image_path)); independent of model and shuffle RNG",
+      "on_disk_images_modified": false,
+      "validation_augmentation": "none",
+      "test_augmentation": "none"
+    },
+    "base_mode": "eval; last 30 parameterized leaf base modules plus classifier trainable; BatchNorm running statistics fixed",
+    "layer_count_convention": "last 30 leaf modules owning parameters in features; classifier trained separately",
+    "head_learning_rate": 0.001,
+    "learning_rate_reduction_factor": 100.0
+  },
+  "latency_protocol": {
+    "warmup": 20,
+    "timed_predictions": 100,
+    "batch_size": 1,
+    "includes": "resize, preprocessing, inference, decision",
+    "excludes": "image decoding, disk IO, model loading, network"
+  },
+  "environment": {
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "pytorch": "2.15.0+cpu",
+    "torchvision": "0.29.2+cpu",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+    "cpu_threads": 4,
+    "inter_op_threads": 1,
+    "precision": "float32"
+  },
+  "parent_experiment": "efficientnetb0_frozen",
+  "parent_results_sha256": "df5bf32b5830d064d2d17d2bca3c1fb61bebdedba3e68fa9c239a09cb468a7a9",
+  "parent_checkpoint_sha256": "08127a6a064d870075f5bd9ee132759d8ae8377b3adae45ff89ee58cc8220a2c",
+  "parent_checkpoint": "C:\\Users\\shiga_2r72hbp\\Downloads\\project managment\\lab4\\results\\efficientnetb0_frozen\\best.pt",
+  "frozen_best_epoch": 50,
+  "delta_report": "C:\\Users\\shiga_2r72hbp\\Downloads\\project managment\\lab4\\reports\\bonus_augmentation.md",
+  "augmentation": {
+    "name": "strong_white_ellipse_glare",
+    "split": "train",
+    "eligible_quality_label": "bad",
+    "eligible_defect_type": "glare",
+    "probability": 0.5,
+    "ellipses": [
+      1,
+      2
+    ],
+    "alpha_8bit": [
+      150,
+      230
+    ],
+    "width_fraction": [
+      0.2,
+      0.5
+    ],
+    "height_fraction": [
+      0.08,
+      0.22
+    ],
+    "center_x_fraction": [
+      0.15,
+      0.85
+    ],
+    "center_y_fraction": [
+      0.2,
+      0.75
+    ],
+    "edge_blur_radius_fraction": 0.012,
+    "color_rgb": [
+      255,
+      255,
+      255
+    ],
+    "applied_before_resize": true,
+    "labels_changed": false,
+    "rng": "local Random(SHA256(seed:epoch:image_path)); independent of model and shuffle RNG",
+    "on_disk_images_modified": false,
+    "validation_augmentation": "none",
+    "test_augmentation": "none"
+  },
+  "reference_experiment": "efficientnetb0_finetune_top30",
+  "reference_results_sha256": "f672b30e741ed45cc3563b56dd8b94d26334752972b328db8dcd866b5683d138",
+  "reference_predictions_sha256": "d6ada9575c9f10b08a634669fbe84f89477b636a1048f00253f86cc8fdfcfb7e",
+  "reference_metrics": {
+    "accuracy": 0.9963768115942029,
+    "precision_macro": 0.9964028776978417,
+    "recall_macro": 0.9963768115942029,
+    "f1_macro": 0.9963767640301936,
+    "per_class": {
+      "bad": {
+        "precision": 1.0,
+        "recall": 0.9927536231884058,
+        "f1-score": 0.9963636363636363,
+        "support": 138.0
+      },
+      "good": {
+        "precision": 0.9928057553956835,
+        "recall": 1.0,
+        "f1-score": 0.9963898916967509,
+        "support": 138.0
+      }
+    }
+  },
+  "reference_confusion_matrix": [
+    [
+      137,
+      1
+    ],
+    [
+      0,
+      138
+    ]
+  ],
+  "training_initialization": "same frozen checkpoint as Task 5A, not continuation of its fine-tuned checkpoint",
+  "evaluation_manifests_before": {
+    "validation": "d57913c505845e9f5717986038dac9e91c5af0b8afc771989f758d81b8e9593d",
+    "test": "cb0f180fe7c495c42d64be899207e44bfaadbc011dcd131ec7489e6b4a887f17"
+  },
+  "train_glare_eligible": 131,
+  "unfrozen_base_layer_names": [
+    "features.6.1.block.2.fc1",
+    "features.6.1.block.2.fc2",
+    "features.6.1.block.3.0",
+    "features.6.1.block.3.1",
+    "features.6.2.block.0.0",
+    "features.6.2.block.0.1",
+    "features.6.2.block.1.0",
+    "features.6.2.block.1.1",
+    "features.6.2.block.2.fc1",
+    "features.6.2.block.2.fc2",
+    "features.6.2.block.3.0",
+    "features.6.2.block.3.1",
+    "features.6.3.block.0.0",
+    "features.6.3.block.0.1",
+    "features.6.3.block.1.0",
+    "features.6.3.block.1.1",
+    "features.6.3.block.2.fc1",
+    "features.6.3.block.2.fc2",
+    "features.6.3.block.3.0",
+    "features.6.3.block.3.1",
+    "features.7.0.block.0.0",
+    "features.7.0.block.0.1",
+    "features.7.0.block.1.0",
+    "features.7.0.block.1.1",
+    "features.7.0.block.2.fc1",
+    "features.7.0.block.2.fc2",
+    "features.7.0.block.3.0",
+    "features.7.0.block.3.1",
+    "features.8.0",
+    "features.8.1"
+  ],
+  "unfrozen_base_layer_count": 30,
+  "trainable_params": 2639937,
+  "evaluation_manifests_after": {
+    "validation": "d57913c505845e9f5717986038dac9e91c5af0b8afc771989f758d81b8e9593d",
+    "test": "cb0f180fe7c495c42d64be899207e44bfaadbc011dcd131ec7489e6b4a887f17"
+  },
+  "misclassified_samples": 1,
+  "model_file": "best.pt",
+  "size_note": "Float32 state_dict with architecture metadata; no optimizer state. Reconstruct using build_model(pretrained=False).",
+  "train_val_at_best_epoch": {
+    "train_accuracy": 0.9977064220183486,
+    "val_accuracy": 1.0,
+    "accuracy_gap": -0.002293577981651418,
+    "train_loss": 0.007521139542552264,
+    "val_loss": 0.010767517703007561
+  },
+  "best_val_loss": 0.010767517703007561,
+  "per_defect_binary_comparison": {
+    "before": {
+      "blur": {
+        "bad_support": 29,
+        "good_support": 138,
+        "precision_bad": 1.0,
+        "recall_bad": 1.0,
+        "f1_bad": 1.0,
+        "f1_good_in_subset": 1.0,
+        "false_accepts": 0,
+        "false_rejects": 0
+      },
+      "exposure": {
+        "bad_support": 29,
+        "good_support": 138,
+        "precision_bad": 1.0,
+        "recall_bad": 1.0,
+        "f1_bad": 1.0,
+        "f1_good_in_subset": 1.0,
+        "false_accepts": 0,
+        "false_rejects": 0
+      },
+      "glare": {
+        "bad_support": 28,
+        "good_support": 138,
+        "precision_bad": 1.0,
+        "recall_bad": 0.9642857142857143,
+        "f1_bad": 0.9818181818181818,
+        "f1_good_in_subset": 0.9963898916967509,
+        "false_accepts": 1,
+        "false_rejects": 0
+      },
+      "occlusion": {
+        "bad_support": 26,
+        "good_support": 138,
+        "precision_bad": 1.0,
+        "recall_bad": 1.0,
+        "f1_bad": 1.0,
+        "f1_good_in_subset": 1.0,
+        "false_accepts": 0,
+        "false_rejects": 0
+      },
+      "skew": {
+        "bad_support": 26,
+        "good_support": 138,
+        "precision_bad": 1.0,
+        "recall_bad": 1.0,
+        "f1_bad": 1.0,
+        "f1_good_in_subset": 1.0,
+        "false_accepts": 0,
+        "false_rejects": 0
+      }
+    },
+    "after": {
+      "blur": {
+        "bad_support": 29,
+        "good_support": 138,
+        "precision_bad": 1.0,
+        "recall_bad": 1.0,
+        "f1_bad": 1.0,
+        "f1_good_in_subset": 1.0,
+        "false_accepts": 0,
+        "false_rejects": 0
+      },
+      "exposure": {
+        "bad_support": 29,
+        "good_support": 138,
+        "precision_bad": 1.0,
+        "recall_bad": 1.0,
+        "f1_bad": 1.0,
+        "f1_good_in_subset": 1.0,
+        "false_accepts": 0,
+        "false_rejects": 0
+      },
+      "glare": {
+        "bad_support": 28,
+        "good_support": 138,
+        "precision_bad": 1.0,
+        "recall_bad": 0.9642857142857143,
+        "f1_bad": 0.9818181818181818,
+        "f1_good_in_subset": 0.9963898916967509,
+        "false_accepts": 1,
+        "false_rejects": 0
+      },
+      "occlusion": {
+        "bad_support": 26,
+        "good_support": 138,
+        "precision_bad": 1.0,
+        "recall_bad": 1.0,
+        "f1_bad": 1.0,
+        "f1_good_in_subset": 1.0,
+        "false_accepts": 0,
+        "false_rejects": 0
+      },
+      "skew": {
+        "bad_support": 26,
+        "good_support": 138,
+        "precision_bad": 1.0,
+        "recall_bad": 1.0,
+        "f1_bad": 1.0,
+        "f1_good_in_subset": 1.0,
+        "false_accepts": 0,
+        "false_rejects": 0
+      }
+    }
+  },
+  "report_status": "completed"
+}
