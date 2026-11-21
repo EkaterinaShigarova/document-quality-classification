@@ -1,0 +1,206 @@
+{
+  "purpose": "Lab 7 integration and latency examples; not a new independent accuracy benchmark",
+  "source_split": "validation",
+  "metadata_sha256": "db7b8e2ffd31d4991e3d6ca57b061ce517b837a98c91312b352a40e5491048de",
+  "seed": 24500007,
+  "selection": "First ten sorted validation images per quality class; include the recorded 5B boundary case in the ten bad examples",
+  "expected_counts": {
+    "accepted": 10,
+    "rejected": 10,
+    "error": 2
+  },
+  "files": [
+    {
+      "file": "01_good_inn_016_v1.jpg",
+      "source_image": "validation/good/good_inn_016_v1.jpg",
+      "source_split": "validation",
+      "true_quality": "good",
+      "expected_status": "accepted",
+      "boundary": false,
+      "sha256": "8a607700134e28b9ade4cdf42dea1114bde06fc8d84fa71ea9957f175c53b2f3"
+    },
+    {
+      "file": "02_good_inn_017_v2.jpg",
+      "source_image": "validation/good/good_inn_017_v2.jpg",
+      "source_split": "validation",
+      "true_quality": "good",
+      "expected_status": "accepted",
+      "boundary": false,
+      "sha256": "f1a0163e273bba72e3a8a8a8a2b8a1c99015c50518d48cd5854d6379ba591c5f"
+    },
+    {
+      "file": "03_good_inn_018_v3.jpg",
+      "source_image": "validation/good/good_inn_018_v3.jpg",
+      "source_split": "validation",
+      "true_quality": "good",
+      "expected_status": "accepted",
+      "boundary": false,
+      "sha256": "bea26b212d7542413f83cc44faa40397ddc47ed4a2cc527145b38f3adc09c916"
+    },
+    {
+      "file": "04_good_inn_040_v1.jpg",
+      "source_image": "validation/good/good_inn_040_v1.jpg",
+      "source_split": "validation",
+      "true_quality": "good",
+      "expected_status": "accepted",
+      "boundary": false,
+      "sha256": "ddd806796d177e746c675aea0dd24b6c9a8721b1b70ebd56bab26dc3e5151ad8"
+    },
+    {
+      "file": "05_good_inn_041_v2.jpg",
+      "source_image": "validation/good/good_inn_041_v2.jpg",
+      "source_split": "validation",
+      "true_quality": "good",
+      "expected_status": "accepted",
+      "boundary": false,
+      "sha256": "167250b602d1de02e2dcfb9ab487279a870e4d4ec59b8baeac7fcf6f46b09e27"
+    },
+    {
+      "file": "06_good_inn_042_v3.jpg",
+      "source_image": "validation/good/good_inn_042_v3.jpg",
+      "source_split": "validation",
+      "true_quality": "good",
+      "expected_status": "accepted",
+      "boundary": false,
+      "sha256": "4b7da80394f525fbc246dae869f11cd72a093d6dcdfb81dfa3b5ba28dfdb7a83"
+    },
+    {
+      "file": "07_good_inn_118_v1.jpg",
+      "source_image": "validation/good/good_inn_118_v1.jpg",
+      "source_split": "validation",
+      "true_quality": "good",
+      "expected_status": "accepted",
+      "boundary": false,
+      "sha256": "5329f5513770ada50cd3b589a6e7c06f6bc342772b71011d7659036c099a2a22"
+    },
+    {
+      "file": "08_good_inn_119_v2.jpg",
+      "source_image": "validation/good/good_inn_119_v2.jpg",
+      "source_split": "validation",
+      "true_quality": "good",
+      "expected_status": "accepted",
+      "boundary": false,
+      "sha256": "d9c158429f8b339d0ddd37e4a18826a52b69f101496df8b554deb4b171b727a6"
+    },
+    {
+      "file": "09_good_inn_120_v3.jpg",
+      "source_image": "validation/good/good_inn_120_v3.jpg",
+      "source_split": "validation",
+      "true_quality": "good",
+      "expected_status": "accepted",
+      "boundary": false,
+      "sha256": "d9c158429f8b339d0ddd37e4a18826a52b69f101496df8b554deb4b171b727a6"
+    },
+    {
+      "file": "10_good_inn_121_v1.jpg",
+      "source_image": "validation/good/good_inn_121_v1.jpg",
+      "source_split": "validation",
+      "true_quality": "good",
+      "expected_status": "accepted",
+      "boundary": false,
+      "sha256": "2d7059274dbef1706c00593cb07cac32e8519781eb427d7f888f58138bd25043"
+    },
+    {
+      "file": "11_bad_inn_blur_016_v1.jpg",
+      "source_image": "validation/bad/bad_inn_blur_016_v1.jpg",
+      "source_split": "validation",
+      "true_quality": "bad",
+      "expected_status": "rejected",
+      "boundary": false,
+      "sha256": "6eb4d9593925fd147771ce15bc713cd0ce41c7084a284459bdbf03adf806372f"
+    },
+    {
+      "file": "12_bad_inn_blur_041_v2.jpg",
+      "source_image": "validation/bad/bad_inn_blur_041_v2.jpg",
+      "source_split": "validation",
+      "true_quality": "bad",
+      "expected_status": "rejected",
+      "boundary": false,
+      "sha256": "c55f27223a7061b535082c384e4889c2e26968d33291cec7c34463af8e42deb8"
+    },
+    {
+      "file": "13_bad_inn_blur_121_v1.jpg",
+      "source_image": "validation/bad/bad_inn_blur_121_v1.jpg",
+      "source_split": "validation",
+      "true_quality": "bad",
+      "expected_status": "rejected",
+      "boundary": false,
+      "sha256": "0ea81b56713c6745fddd4d8ef3896e4a6fdec2cd7d85627be595df69b362bb9d"
+    },
+    {
+      "file": "14_bad_inn_blur_131_v2.jpg",
+      "source_image": "validation/bad/bad_inn_blur_131_v2.jpg",
+      "source_split": "validation",
+      "true_quality": "bad",
+      "expected_status": "rejected",
+      "boundary": false,
+      "sha256": "83617aeeb82a09437fd8290c227aab3c55b9e0d9d3642696d8f16b20f8a21e33"
+    },
+    {
+      "file": "15_bad_inn_blur_136_v1.jpg",
+      "source_image": "validation/bad/bad_inn_blur_136_v1.jpg",
+      "source_split": "validation",
+      "true_quality": "bad",
+      "expected_status": "rejected",
+      "boundary": false,
+      "sha256": "552a6ef3f3397e320898b5461a8068f9b97bd35902efcb59bec8c720598965ed"
+    },
+    {
+      "file": "16_bad_inn_blur_171_v3.jpg",
+      "source_image": "validation/bad/bad_inn_blur_171_v3.jpg",
+      "source_split": "validation",
+      "true_quality": "bad",
+      "expected_status": "rejected",
+      "boundary": false,
+      "sha256": "d0735970ce0bad1812ae48b8a2173e82acb0f43f528171f8ef7dc85d4c276668"
+    },
+    {
+      "file": "17_bad_inn_blur_236_v2.jpg",
+      "source_image": "validation/bad/bad_inn_blur_236_v2.jpg",
+      "source_split": "validation",
+      "true_quality": "bad",
+      "expected_status": "rejected",
+      "boundary": false,
+      "sha256": "a583f6051956b8cb7d74d936911b552e5e5d147759871f8ec7b7631716386efa"
+    },
+    {
+      "file": "18_bad_inn_blur_256_v1.jpg",
+      "source_image": "validation/bad/bad_inn_blur_256_v1.jpg",
+      "source_split": "validation",
+      "true_quality": "bad",
+      "expected_status": "rejected",
+      "boundary": false,
+      "sha256": "97c5e02874b6055c310277553e67dff75d198474269c248c7549f7e9927e5135"
+    },
+    {
+      "file": "19_bad_inn_blur_281_v2.jpg",
+      "source_image": "validation/bad/bad_inn_blur_281_v2.jpg",
+      "source_split": "validation",
+      "true_quality": "bad",
+      "expected_status": "rejected",
+      "boundary": false,
+      "sha256": "544fa62bc611e555f34c7bfb8b25be3152c2242b6db7049540d503fcab1c4707"
+    },
+    {
+      "file": "20_bad_inn_glare_282_v3.jpg",
+      "source_image": "validation/bad/bad_inn_glare_282_v3.jpg",
+      "source_split": "validation",
+      "true_quality": "bad",
+      "expected_status": "rejected",
+      "boundary": true,
+      "sha256": "8715b937afc960da9d01af3ea3a90f91b67511a4662a87ab404e005d8e0ec937"
+    },
+    {
+      "file": "non_image.jpg",
+      "true_quality": null,
+      "expected_status": "error",
+      "boundary": false
+    },
+    {
+      "file": "corrupted.png",
+      "true_quality": null,
+      "expected_status": "error",
+      "boundary": false
+    }
+  ]
+}

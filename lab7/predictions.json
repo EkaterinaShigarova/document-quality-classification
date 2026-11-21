@@ -1,0 +1,348 @@
+{
+  "scope": "quality-only pipeline per instructor clarification",
+  "sample_origin": "fixed validation examples plus two invalid files",
+  "chosen_threshold": 0.35,
+  "threshold_probability": "P(bad)",
+  "counts": {
+    "accepted": 10,
+    "rejected": 10,
+    "error": 2
+  },
+  "expected_counts": {
+    "accepted": 10,
+    "rejected": 10,
+    "error": 2
+  },
+  "predictions": [
+    {
+      "file": "01_good_inn_016_v1.jpg",
+      "status": "accepted",
+      "quality": "good",
+      "quality_confidence": 0.9995195865631104,
+      "document_type": null,
+      "document_type_confidence": null,
+      "reason": null,
+      "model_versions": {
+        "quality": "efficientnetb0_finetune_top30_onnx_fp32_epoch28",
+        "doctype": "deferred_next_semester"
+      },
+      "latency_ms": 17.932,
+      "timestamp": "2026-11-21T15:01:51.678402Z"
+    },
+    {
+      "file": "02_good_inn_017_v2.jpg",
+      "status": "accepted",
+      "quality": "good",
+      "quality_confidence": 0.9999971389770508,
+      "document_type": null,
+      "document_type_confidence": null,
+      "reason": null,
+      "model_versions": {
+        "quality": "efficientnetb0_finetune_top30_onnx_fp32_epoch28",
+        "doctype": "deferred_next_semester"
+      },
+      "latency_ms": 18.35,
+      "timestamp": "2026-11-21T15:01:51.694419Z"
+    },
+    {
+      "file": "03_good_inn_018_v3.jpg",
+      "status": "accepted",
+      "quality": "good",
+      "quality_confidence": 0.9999674558639526,
+      "document_type": null,
+      "document_type_confidence": null,
+      "reason": null,
+      "model_versions": {
+        "quality": "efficientnetb0_finetune_top30_onnx_fp32_epoch28",
+        "doctype": "deferred_next_semester"
+      },
+      "latency_ms": 18.08,
+      "timestamp": "2026-11-21T15:01:51.710453Z"
+    },
+    {
+      "file": "04_good_inn_040_v1.jpg",
+      "status": "accepted",
+      "quality": "good",
+      "quality_confidence": 0.9533358216285706,
+      "document_type": null,
+      "document_type_confidence": null,
+      "reason": null,
+      "model_versions": {
+        "quality": "efficientnetb0_finetune_top30_onnx_fp32_epoch28",
+        "doctype": "deferred_next_semester"
+      },
+      "latency_ms": 18.464,
+      "timestamp": "2026-11-21T15:01:51.726510Z"
+    },
+    {
+      "file": "05_good_inn_041_v2.jpg",
+      "status": "accepted",
+      "quality": "good",
+      "quality_confidence": 0.9999967217445374,
+      "document_type": null,
+      "document_type_confidence": null,
+      "reason": null,
+      "model_versions": {
+        "quality": "efficientnetb0_finetune_top30_onnx_fp32_epoch28",
+        "doctype": "deferred_next_semester"
+      },
+      "latency_ms": 19.512,
+      "timestamp": "2026-11-21T15:01:51.761365Z"
+    },
+    {
+      "file": "06_good_inn_042_v3.jpg",
+      "status": "accepted",
+      "quality": "good",
+      "quality_confidence": 0.9997727870941162,
+      "document_type": null,
+      "document_type_confidence": null,
+      "reason": null,
+      "model_versions": {
+        "quality": "efficientnetb0_finetune_top30_onnx_fp32_epoch28",
+        "doctype": "deferred_next_semester"
+      },
+      "latency_ms": 19.037,
+      "timestamp": "2026-11-21T15:01:51.768345Z"
+    },
+    {
+      "file": "07_good_inn_118_v1.jpg",
+      "status": "accepted",
+      "quality": "good",
+      "quality_confidence": 0.9999973773956299,
+      "document_type": null,
+      "document_type_confidence": null,
+      "reason": null,
+      "model_versions": {
+        "quality": "efficientnetb0_finetune_top30_onnx_fp32_epoch28",
+        "doctype": "deferred_next_semester"
+      },
+      "latency_ms": 19.8,
+      "timestamp": "2026-11-21T15:01:51.797693Z"
+    },
+    {
+      "file": "08_good_inn_119_v2.jpg",
+      "status": "accepted",
+      "quality": "good",
+      "quality_confidence": 0.9807760715484619,
+      "document_type": null,
+      "document_type_confidence": null,
+      "reason": null,
+      "model_versions": {
+        "quality": "efficientnetb0_finetune_top30_onnx_fp32_epoch28",
+        "doctype": "deferred_next_semester"
+      },
+      "latency_ms": 19.223,
+      "timestamp": "2026-11-21T15:01:51.813794Z"
+    },
+    {
+      "file": "09_good_inn_120_v3.jpg",
+      "status": "accepted",
+      "quality": "good",
+      "quality_confidence": 0.9807760715484619,
+      "document_type": null,
+      "document_type_confidence": null,
+      "reason": null,
+      "model_versions": {
+        "quality": "efficientnetb0_finetune_top30_onnx_fp32_epoch28",
+        "doctype": "deferred_next_semester"
+      },
+      "latency_ms": 17.998,
+      "timestamp": "2026-11-21T15:01:51.831152Z"
+    },
+    {
+      "file": "10_good_inn_121_v1.jpg",
+      "status": "accepted",
+      "quality": "good",
+      "quality_confidence": 0.9997820854187012,
+      "document_type": null,
+      "document_type_confidence": null,
+      "reason": null,
+      "model_versions": {
+        "quality": "efficientnetb0_finetune_top30_onnx_fp32_epoch28",
+        "doctype": "deferred_next_semester"
+      },
+      "latency_ms": 19.638,
+      "timestamp": "2026-11-21T15:01:51.854203Z"
+    },
+    {
+      "file": "11_bad_inn_blur_016_v1.jpg",
+      "status": "rejected",
+      "quality": "bad",
+      "quality_confidence": 0.9999998211860657,
+      "document_type": null,
+      "document_type_confidence": null,
+      "reason": "poor_quality",
+      "model_versions": {
+        "quality": "efficientnetb0_finetune_top30_onnx_fp32_epoch28",
+        "doctype": "deferred_next_semester"
+      },
+      "latency_ms": 18.157,
+      "timestamp": "2026-11-21T15:01:51.862343Z"
+    },
+    {
+      "file": "12_bad_inn_blur_041_v2.jpg",
+      "status": "rejected",
+      "quality": "bad",
+      "quality_confidence": 0.9999993741512299,
+      "document_type": null,
+      "document_type_confidence": null,
+      "reason": "poor_quality",
+      "model_versions": {
+        "quality": "efficientnetb0_finetune_top30_onnx_fp32_epoch28",
+        "doctype": "deferred_next_semester"
+      },
+      "latency_ms": 18.849,
+      "timestamp": "2026-11-21T15:01:51.893847Z"
+    },
+    {
+      "file": "13_bad_inn_blur_121_v1.jpg",
+      "status": "rejected",
+      "quality": "bad",
+      "quality_confidence": 0.9999998807907104,
+      "document_type": null,
+      "document_type_confidence": null,
+      "reason": "poor_quality",
+      "model_versions": {
+        "quality": "efficientnetb0_finetune_top30_onnx_fp32_epoch28",
+        "doctype": "deferred_next_semester"
+      },
+      "latency_ms": 19.24,
+      "timestamp": "2026-11-21T15:01:51.909909Z"
+    },
+    {
+      "file": "14_bad_inn_blur_131_v2.jpg",
+      "status": "rejected",
+      "quality": "bad",
+      "quality_confidence": 0.9999999403953552,
+      "document_type": null,
+      "document_type_confidence": null,
+      "reason": "poor_quality",
+      "model_versions": {
+        "quality": "efficientnetb0_finetune_top30_onnx_fp32_epoch28",
+        "doctype": "deferred_next_semester"
+      },
+      "latency_ms": 17.936,
+      "timestamp": "2026-11-21T15:01:51.925878Z"
+    },
+    {
+      "file": "15_bad_inn_blur_136_v1.jpg",
+      "status": "rejected",
+      "quality": "bad",
+      "quality_confidence": 0.9999998211860657,
+      "document_type": null,
+      "document_type_confidence": null,
+      "reason": "poor_quality",
+      "model_versions": {
+        "quality": "efficientnetb0_finetune_top30_onnx_fp32_epoch28",
+        "doctype": "deferred_next_semester"
+      },
+      "latency_ms": 17.3,
+      "timestamp": "2026-11-21T15:01:51.941614Z"
+    },
+    {
+      "file": "16_bad_inn_blur_171_v3.jpg",
+      "status": "rejected",
+      "quality": "bad",
+      "quality_confidence": 0.9999997615814209,
+      "document_type": null,
+      "document_type_confidence": null,
+      "reason": "poor_quality",
+      "model_versions": {
+        "quality": "efficientnetb0_finetune_top30_onnx_fp32_epoch28",
+        "doctype": "deferred_next_semester"
+      },
+      "latency_ms": 18.695,
+      "timestamp": "2026-11-21T15:01:51.970710Z"
+    },
+    {
+      "file": "17_bad_inn_blur_236_v2.jpg",
+      "status": "rejected",
+      "quality": "bad",
+      "quality_confidence": 0.9999998211860657,
+      "document_type": null,
+      "document_type_confidence": null,
+      "reason": "poor_quality",
+      "model_versions": {
+        "quality": "efficientnetb0_finetune_top30_onnx_fp32_epoch28",
+        "doctype": "deferred_next_semester"
+      },
+      "latency_ms": 18.612,
+      "timestamp": "2026-11-21T15:01:51.989681Z"
+    },
+    {
+      "file": "18_bad_inn_blur_256_v1.jpg",
+      "status": "rejected",
+      "quality": "bad",
+      "quality_confidence": 0.9999998807907104,
+      "document_type": null,
+      "document_type_confidence": null,
+      "reason": "poor_quality",
+      "model_versions": {
+        "quality": "efficientnetb0_finetune_top30_onnx_fp32_epoch28",
+        "doctype": "deferred_next_semester"
+      },
+      "latency_ms": 20.1,
+      "timestamp": "2026-11-21T15:01:52.010190Z"
+    },
+    {
+      "file": "19_bad_inn_blur_281_v2.jpg",
+      "status": "rejected",
+      "quality": "bad",
+      "quality_confidence": 0.9999995231628418,
+      "document_type": null,
+      "document_type_confidence": null,
+      "reason": "poor_quality",
+      "model_versions": {
+        "quality": "efficientnetb0_finetune_top30_onnx_fp32_epoch28",
+        "doctype": "deferred_next_semester"
+      },
+      "latency_ms": 19.323,
+      "timestamp": "2026-11-21T15:01:52.021719Z"
+    },
+    {
+      "file": "20_bad_inn_glare_282_v3.jpg",
+      "status": "rejected",
+      "quality": "bad",
+      "quality_confidence": 0.3744010329246521,
+      "document_type": null,
+      "document_type_confidence": null,
+      "reason": "poor_quality",
+      "model_versions": {
+        "quality": "efficientnetb0_finetune_top30_onnx_fp32_epoch28",
+        "doctype": "deferred_next_semester"
+      },
+      "latency_ms": 18.331,
+      "timestamp": "2026-11-21T15:01:52.045961Z"
+    },
+    {
+      "file": "non_image.jpg",
+      "status": "error",
+      "quality": null,
+      "quality_confidence": null,
+      "document_type": null,
+      "document_type_confidence": null,
+      "reason": "unsupported_file",
+      "model_versions": {
+        "quality": "efficientnetb0_finetune_top30_onnx_fp32_epoch28",
+        "doctype": "deferred_next_semester"
+      },
+      "latency_ms": 3.791,
+      "timestamp": "2026-11-21T15:01:52.045961Z"
+    },
+    {
+      "file": "corrupted.png",
+      "status": "error",
+      "quality": null,
+      "quality_confidence": null,
+      "document_type": null,
+      "document_type_confidence": null,
+      "reason": "corrupted_image",
+      "model_versions": {
+        "quality": "efficientnetb0_finetune_top30_onnx_fp32_epoch28",
+        "doctype": "deferred_next_semester"
+      },
+      "latency_ms": 3.321,
+      "timestamp": "2026-11-21T15:01:52.054171Z"
+    }
+  ]
+}

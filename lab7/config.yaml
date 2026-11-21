@@ -1,0 +1,18 @@
+quality:
+  model_path: models/model.onnx
+  model_version: efficientnetb0_finetune_top30_onnx_fp32_epoch28
+  chosen_threshold: 0.35
+  threshold_probability: bad
+  input_size: [224, 224]
+  mean: [0.485, 0.456, 0.406]
+  std: [0.229, 0.224, 0.225]
+runtime:
+  cpu_threads: 4
+  inter_op_threads: 1
+upload:
+  allowed_formats: [JPEG, PNG]
+  max_bytes: 20971520
+  max_pixels: 25000000
+document_classifier:
+  enabled: false
+  model_version: deferred_next_semester

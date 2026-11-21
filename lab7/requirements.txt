@@ -1,0 +1,6 @@
+numpy>=2.2,<3
+Pillow>=10.4,<13
+PyYAML>=6,<7
+onnxruntime>=1.23,<2
+streamlit==1.67.0
+pytest>=8,<10
