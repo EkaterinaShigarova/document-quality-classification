@@ -120,3 +120,7 @@ On 21 November 2026, the deployed website accepted `07_good_inn_118_v1.jpg`, rej
 A screen recording demonstrates live accepted/rejected requests and JSON at the public URL. Supply that recording with the submission. The final submission also requires the repository tag `final` and a live classroom demonstration; neither is replaced by screenshots or this README.
 
 See the [model card](model_card.md) for metric provenance and limitations, and the [retrospective](retrospective.md) for integration lessons.
+
+## Demo video
+
+[Watch or download the demonstration video](https://github.com/EkaterinaShigarova/document-quality-classification/releases/download/final/2026-11-21.235221.mp4)
