@@ -1,6 +1,6 @@
 # Lab 7 — Document Quality Gate
 
-Ekaterina Shigarova · IIKb-24 · Semester 1
+
 
 **Public website:** https://document-quality-classification.onrender.com
 
